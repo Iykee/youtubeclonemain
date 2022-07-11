@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/245b421dbf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/clone.css">
+    <link rel="stylesheet" href="Styles/header.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+        <img  class="hambuger-menu" src="thumbnails/icons/hamburger-menu.svg">
+        <img class="youtube-logo"   src="thumbnails/icons/youtube-logo.svg">
+        </div>
+        <div class="middle-section">
+
+            <input  type="text" placeholder="Search" class="search-bar">
+         
+            <button class="search-button ">
+                    <img class="search-icon" src="thumbnails/icons/search.svg">
+                    <div class="tooltip">Search</div>
+            </button>
+                <button class="voice-search-button">
+                    <img  class="voice-search-icon" src="thumbnails/icons/voice-search-icon.svg" alt="">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            
+          
+        </div>
+       
+        <div class="right-section">
+            <div class="uploadicon-container">
+                <img class="upload-icon" src="thumbnails/icons/upload.svg">
+                <div class="tooltip">create</div>
+            </div>
+ 
+            <img class="youtubeapp-icon" src="thumbnails/icons/youtube-apps.svg">
+            <div class="notification-container">
+                <img class="notification-icon" src="thumbnails/icons/notifications.svg">
+                <div class="notification-count">3</div>
+                </div>
+                <div class="channelicon-container">
+             <button  onclick="myFunction()" class="dropbtn"><a href="#"></a><img class="channel-icon" src="thumbnails/icons/my-channel.jpeg"></a></button>
+                 <div id ="myDropdown"class="dropdown-container">
+                     
+   
+                    <div class="icon-container">
+                       
+                            <i class="fa-solid fa-user iconn"></i>
+                            <h5>Your channel</h5>
+                        
+
+                    </div>
+                   
+                     <div class="icon-container">
+                        <i class="fa-solid fa-microphone-lines iconn"></i>
+                        <h5>Youtube Studio</h5>
+                     </div>
+                     <div class="icon-container">
+                        <i class="fa-light fa-id-badge iconn"></i>
+                        <h5>Switch account</h5>
+                     </div>
+       
+                     <div class="icon-container">
+                        <i class="fa-solid fa-arrow-right-from-bracket iconn"></i>
+                        <h5>Sign out</h5>
+                     </div>
+       
+                     <hr>
+                     <div class="icon-container"> 
+                        <i class="fa-solid fa-moon iconn"></i>
+                        <h5> Appearance</h5>
+                     </div>
+                     <div class="icon-container">
+                        <i class="fa-solid fa-language iconn"></i>
+                        <h5>Language</h5>
+                     </div>
+       
+                     <div class="icon-container">
+                        <i class="fa-solid fa-location-dot iconn"></i>
+                        <h5>Location</h5>
+
+                     </div>
+                    
+                     <div class="icon-container">
+                        <i class="fa-solid fa-gear iconn"></i>
+                       <a href="settings.html"><h5>Settings</h5></a>
+                     </div>
+                    
+
+
+                 </div>
+               
+
+                 </div>
+        </div>
+  
+    </div>
+    <div class="side-bar-s">
+       
+        
+    <a href="settings.html" class="link-d"><div class="sidebar-link-s">Account</div></a>
+  
+    
+      
+    <div class="sidebar-link-s">Notification</div>
+    
+  
+    <div class="sidebar-link-s">Playback and performance</div>
+    
+
+    <a href="downloads.html" class="link-d"><div class="sidebar-link-s">Downloads</div></a>  
+    
+
+    <div class="sidebar-link-s">Privacy</div>
+
+    <div class="sidebar-link-s">Connected apps</div>
+
+    <div class="sidebar-link-s">Purchases and memberships</div>
+    <div class="sidebar-link-s">Billing and payments</div>
+    <div class="sidebar-link-s">Advanced settings</div>
+    </div>
+    <section class="Account">
+        <div class="downloads-s">
+            <h3>Downloads</h3>
+            <h1>Control your downloads settings</h1>
+            <p>Downloads settings apply to this browser only</p>
+
+        </div>
+        <hr>
+        <div class="download-flex">
+            <div >
+                <h4>Download quality</h4>
+            </div>
+            <div class="checkbox-s">
+                 <div><input type="radio" name="myCheck" > Ask each time</div>
+                 <div><input type="radio" name="myCheck" > Full HD(1080p)</div>
+                <div><input type="radio" name="myCheck" > High(720p)</div>
+                <div><input type="radio" name="myCheck" > Medium(480p)</div>
+                <div><input type="radio" name="myCheck" > Low(144p)</div>
+
+            </div>
+        </div>
+        <div class="delete-s">
+            <div>
+                <h3>Delete all downloads</h3>
+                <p>Deleting downloads will free space on this device</p>
+            </div>
+            <div>
+                <button class="delete-btn">DELETE ALL DOWNLOADS</button>
+            </div>
+
+        </div>
+
+    </section>
+    
+   
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-container");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>

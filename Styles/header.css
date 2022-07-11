@@ -119,7 +119,39 @@ flex-shrink: 0;
 .channel-icon{
     height: 32px;
     border-radius: 16px;
+   
 }
+.channelicon-container{
+    position: relative;
+   
+}
+.dropdown-container{
+    position: absolute;
+    background-color:rgba(33, 33, 33, 0.97);
+    display: none;
+    color: #ffffff;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 50px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    top: 0;
+    right: 50px;
+    width: 250px;
+    font-family: Roboto, Arial;
+    z-index: 1;
+    height: 100vh;
+    font-size: 18px;
+    font-weight: 100;
+  
+   
+    
+
+}
+
+.show {display: block;}
+
 /* sidebar styling */
 .side-bar{
     position: fixed;
@@ -138,8 +170,44 @@ flex-shrink: 0;
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    text-align: left;
+    
+}
+.sidebar-link-s{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 20px;
+    padding-right: 8px;
+   
+    
+   
+    
 
 }
+.side-bar-s{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 55px;
+       background-color: white;
+       padding-top: 5px;
+      
+      
+}
+.sidebar-link-s:hover{
+     background-color: rgb(235, 235, 235);
+}
+.sidebar-link-s:active{
+
+    background-color: rgb(235, 235, 235);
+}
+
 .sidebar-link:hover{
     background-color: rgb(235, 235, 235);
 }
@@ -177,4 +245,122 @@ flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.dropbtn{
+padding:0;
+border: none;
+cursor: pointer;
+background-color: white;
+
+}
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+    
+    
+}
+ .iconn{
+   margin-right: 28px;
+   margin-left: 10px;
+   
+  
+} 
+/* .dropdown-container :hover{
+    background-color: rgba(213, 205, 205, 0.3);
+} */
+
+.div1{
+ 
+    padding-bottom: 30px;
+}
+.Account{
+    padding-left: 150px;
+    font-family: Roboto Arial;
+}
+.channel-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.channel-s{
+    padding-bottom: 30px;
+}
+.google-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+
+
+}
+.view{
+    margin-top: 20px;
+}
+.test{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    text-align: left;
+    
+
+}
+.test:hover{
+    background-color: rgba(213, 205, 205, 0.3);
+
+}
+.imgg{
+    height: 24px;
+    margin-bottom: 4px;
+}
+.link-s{
+    text-decoration: none;
+    color: white;
+}
+.link-d
+{
+    text-decoration: none;
+    color: black;
+
+}
+.download-flex{
+  
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    
+    
+
+}
+.checkbox-s{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Roboto Arial;
+   
+}
+.checkbox-s input{
+    margin-top: 20px;
+    margin-left: 50px;
+   
+    
+}
+.downloads-s{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+.delete-s{
+    display: flex;
+}
+.delete-btn{
+    margin-top: 50px;
+    border:solid 1px blue;
+    color: blue;
+    background-color: white;
+    padding: 5px 3px 5px 3px;
+    margin-left: 25px;
+    white-space: nowrap;
 }
